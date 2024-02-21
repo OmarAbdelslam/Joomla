@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Mobile_Market.Models.Departement>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.depoNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.depoName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.depoimage)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.depoNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.depoName)
+            </td>
+            <td>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.depoNo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.depoNo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.depoNo">Delete</a>
+            </td>
+        </tr>
+            <img src="@Html.DisplayFor(modelitem=>item.depoimage)" alt="image" />
+
+}
+    </tbody>
+
+</table>
+

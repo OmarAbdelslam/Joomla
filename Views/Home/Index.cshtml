@@ -1,0 +1,43 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home";
+    Layout = "_LayoutHome";
+}
+
+<video autoplay muted style="width: 100%; opacity: 70%; z-index: 2;" loop id="myVideo">
+    <source src="~/pexels-kindel-media-6994619%20(2160p).mp4" type="video/mp4" />
+</video>
+
+
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content" action="/action_page.php">
+        <div class="container">
+            <h1>Welcome</h1>
+            <h2>We hope you are happy</h2>
+            <div class="clearfix">
+                <a style="font-size:x-large;" asp-action="" asp-controller="Member"></a> <button type="button" class="cancelbtn">SignIn</button>
+                <a style="font-size:x-large;" asp-action="Create" asp-controller="Member"> <button type="button" class="deletebtn"> SignUp</button> </a>
+                
+            </div>
+        </div>
+    </form>
+</div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        var show = document.getElementById('id01');
+
+        bodys.onload = function () {
+            show.style.display = "block";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>

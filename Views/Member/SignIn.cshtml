@@ -1,0 +1,26 @@
+﻿@model Mobile_Market.Models.Member
+
+@{
+    ViewData["Title"] = "SignIn";
+}
+
+<h1>SignIn</h1>
+
+<div>
+    <h4>Member</h4>
+    <hr />
+      <div>
+          <input type="text" id="memberid" asp-for="memberId" placeholder="EnterUserName" />
+      </div>
+      <div>
+          <input type="password" placeholder="EnterPassword" />
+      </div>
+       
+</div>
+<div>
+    <a asp-action="Details" asp-route-id="@Model?.memberId">LogIn</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+<script>
+    var argments=document.getElementById("memberid");
+</script>

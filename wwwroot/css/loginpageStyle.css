@@ -1,0 +1,92 @@
+body
+{
+    margin: 0px;
+    background-image: linear-gradient(to bottom right, #000000 , rgb(56 115 169),#000);    
+}
+
+div
+{
+    margin-top: 40px;
+}
+#lihead
+{   background-color: #51bfbeb0; 
+
+    margin: 0px; 
+    padding: 19px;
+
+    list-style: none;
+}
+#lihead li
+{
+    display: inline;
+    margin-left: 15px;
+    padding: 7px;
+}
+#lihead li:hover
+{
+    text-decoration: underline;
+    outline: 1px solid rgba(29, 124, 148, 0.842);
+    background-color: #4745bb36;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+table
+{
+    width: 920px;
+    height: 100px;
+    position: relative;
+    margin: auto auto auto auto;
+    border-spacing: 0px;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in-out;
+    margin-top: 5vw;
+    margin-bottom: auto;
+}
+table:hover
+{
+    box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(47px);
+}
+#form
+{
+    background-color: #45a7bbb3;
+    width: 50%;
+}
+form
+{
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+form input
+{
+    position: relative;
+    display: block;
+    margin-bottom: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    
+}
+form button
+{
+    position: relative;
+    display: block;
+    margin-bottom: 37px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #45a7bbb3;
+    padding: 10px;
+
+}
+#user:hover,#passw:hover
+{
+    transition-duration: 2s;
+    transition-delay: 1ms;
+    width: 60%;
+}

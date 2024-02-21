@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Hello This is site Joomla , her find anything of a product for you , we include process pay protacted" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="~/css/layoutdashboard.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/layouthomewelcome.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
+
+        <style>
+
+        </style>
+    </head>
+<body id="bodys" style="background-color: #000;">
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <nav class="navbar navbar-expand-xl navbar-light">
+                            <div class="container-fluid">
+                                <a href="#" class="navbar-brand" style="text-shadow: 10px 10px 10px;">JOOMLA.COM<img src="~/download.jpeg" width="50px" height="20px" style="margin-left: 10px;"  alt="logo" class="img-fluid" /></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav mx-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-action="Create" asp-controller="Member">SignUp</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Categories
+                                            </a>
+                                            
+                                            <ul style="margin-top: 20px; width:400px" class="dropdown-menu dropdown-menu-end" id="nav-link" aria-labelledby="navbarDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">House and garden</a></li>
+                                                <li><a class="dropdown-item" href="#">Hair extensions and wigs</a></li>
+                                                <li><a class="dropdown-item" href="#">Men's fashion</a></li>
+                                                <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                                <li><a class="dropdown-item" href="#">Electronics</a></li>
+                                                <li><a class="dropdown-item" href="#">Home decor and lighting</a></li>
+                                                <li><a class="dropdown-item" href="#">Household appliance</a></li>
+                                                <li><a class="dropdown-item" href="#">Cars and bikes</a></li>
+                                                <li><a class="dropdown-item" href="#">Luggage and bags</a></li>
+                                                <li><a class="dropdown-item" href="#">The shoes</a></li>
+                                                <li><a class="dropdown-item" href="#">Special occasion fashion</a></li>
+                                                <li><a class="dropdown-item" href="#">Women's fashion</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-4 col-md-3">
+                        <div class="header-search mt-2">
+                            <div class="search-form">
+                                <form method="get">
+                                    <div class="input-group">
+                                        <input type="text" name="search" onchange="" id="search" class="form-control" placeholder="Search Here" />
+                                        <div class="input-group-addon">
+                                            <button type="submit"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 cart-login">
+                        <div class="float-end cart mt-2">
+                            <a href="#">
+                                <img class="img-fluid" style="margin-left:30px; height: 30px; width: 30px;" src="~/cart.png" alt="cart" />
+                            </a>
+                        </div>
+
+                        <div class="float-end" style="display: inline-block;">
+                            <button type="button" style="margin-right: 30px;" class="btn btn-light mt-2 btn-sm">Login</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Bootstrap JS -->
+        <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+       <div>
+           @RenderBody();
+       </div>
+
+          <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+              <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <p class="text-muted">© 2022</p>
+              </div>
+          
+              <div class="col mb-3">
+          
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+          <script>
+              var inpbtn = document.getElementById('search');
+              
+          </script>
+    </body>
+</html>
